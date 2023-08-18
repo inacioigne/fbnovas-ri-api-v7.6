@@ -1455,6 +1455,10 @@
             <displayed-value>Manual</displayed-value>
             <stored-value>Manual</stored-value>
             </pair>
+            <pair>
+            <displayed-value>Monografia</displayed-value>
+            <stored-value>Monografia</stored-value>
+            </pair>
             <pair>		
             <displayed-value>Tese</displayed-value>
             <stored-value>Tese</stored-value>
