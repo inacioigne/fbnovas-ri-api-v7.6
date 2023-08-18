@@ -17,3 +17,4 @@ lib
 solr
 webapps
 local_copy.cfg
+config/dspace.cfg
