@@ -1446,6 +1446,10 @@
             <displayed-value>Produto de Pós-Graduação</displayed-value>
             <stored-value>Produto de Pós-Graduação</stored-value>
             </pair>
+             <pair>
+            <displayed-value>Projeto experimental</displayed-value>
+            <stored-value>Projeto experimental</stored-value>
+            </pair>
 
             <pair>
             <displayed-value>Relatório</displayed-value>
