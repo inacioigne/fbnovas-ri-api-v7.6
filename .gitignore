@@ -16,3 +16,4 @@ var
 lib
 solr
 webapps
+local_copy.cfg
