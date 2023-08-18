@@ -1407,6 +1407,16 @@
             <displayed-value>Artigo</displayed-value>
             <stored-value>Artigo</stored-value>
             </pair>
+             <pair>
+            <displayed-value>Banner</displayed-value>
+            <stored-value>Banner</stored-value>
+            </pair>
+
+             <pair>
+            <displayed-value>Jornal</displayed-value>
+            <stored-value>Jornal</stored-value>
+            </pair>
+
             <pair>
             <displayed-value>Livro</displayed-value>
             <stored-value>Livro</stored-value>
@@ -1427,6 +1437,16 @@
             <displayed-value>Podcast</displayed-value>
             <stored-value>Podcast</stored-value>
             </pair>
+             <pair>
+            <displayed-value>Produto de Graduação</displayed-value>
+            <stored-value>Produto de Graduação</stored-value>
+            </pair>
+
+            <pair>
+            <displayed-value>Produto de Pós-Graduação</displayed-value>
+            <stored-value>Produto de Pós-Graduação</stored-value>
+            </pair>
+
             <pair>
             <displayed-value>Relatório</displayed-value>
             <stored-value>Relatório</stored-value>
