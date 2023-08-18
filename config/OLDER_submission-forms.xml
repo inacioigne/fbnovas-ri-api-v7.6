@@ -66,6 +66,18 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
+                    <dc-qualifier>organizer</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Organizador</label>
+                    <!-- <type-bind>Artigo</type-bind> -->
+                    <input-type>onebox</input-type>
+                    <hint>Entre com o nome do organizador (Ex. Vasconcelos, Alcebíades Pereira)</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
                     <dc-qualifier>advisor</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Orientador</label>
@@ -1391,46 +1403,17 @@
         </value-pairs>
 
         <value-pairs value-pairs-name="common_types" dc-term="type">
+           
            <pair>
             <displayed-value>Artigo</displayed-value>
             <stored-value>Artigo</stored-value>
             </pair>
-            <pair>
-            <displayed-value>Livro</displayed-value>
-            <stored-value>Livro</stored-value>
-            </pair>
-            <pair>
-            <displayed-value>Capítulo de Livro</displayed-value>
-            <stored-value>Capítulo de Livro</stored-value>
-            </pair>
-            <pair>
-            <displayed-value>Imagem</displayed-value>
-            <stored-value>Imagem</stored-value>
-            </pair>
-            <pair>
-            <displayed-value>Apresentação</displayed-value>
-            <stored-value>Apresentação</stored-value>
-            </pair>
-            <pair>
-            <displayed-value>Podcast</displayed-value>
-            <stored-value>Podcast</stored-value>
-            </pair>
-            <pair>
-            <displayed-value>Relatório</displayed-value>
-            <stored-value>Relatório</stored-value>
-            </pair>
-            <pair>
-            <displayed-value>Tese</displayed-value>
-            <stored-value>Tese</stored-value>
-            </pair>
+
              <pair>
-            <displayed-value>Dissertação</displayed-value>
-            <stored-value>Dissertação</stored-value>
+            <displayed-value>Banner</displayed-value>
+            <stored-value>Banner</stored-value>
             </pair>
-            <pair>
-            <displayed-value>Video</displayed-value>
-            <stored-value>Video</stored-value>
-            </pair>
+
         </value-pairs>
 
         <!-- default language order: (from dspace 1.2.1)
