@@ -19,33 +19,14 @@
     <submission-map>
         <!-- Default submission process -->
         <name-map collection-handle="default" submission-name="traditional"/>
-
-        <!-- Sample Entities Collection configuration based on the demo Entities dataset available at:
-             https://github.com/DSpace-Labs/AIP-Files/releases/tag/demo-entities-data
-             This sets up the following Entity-based Collections in that dataset:
-                "Publication" Collections = "Publications" -> "Articles", "Books", "Publications 2", & "Theses"
-                "OrgUnit" Collection = "Related Objects" -> "OrgUnits"
-                "Person" Collections = "Related Objects" -> "People" & "People 2"
-                "Project" Collections = "Related Objects" -> "Projects" & "Projects 2"
-                "Journal" Collection = "Compound Journals" -> "Journals"
-                "Journal Volume" Collection = "Compound Journals" -> "Journal Volumes"
-                "Journal Issue" Collection = "Compound Journals" ->  "Journal Issues"
-             If you are using that demo dataset, you can simply uncomment the below configuration to enable Entity
-             submission into all of the above Collections.
-        -->
-        
-        <name-map collection-handle="123456789/17" submission-name="Publication"/>
-        <!-- <name-map collection-handle="123456789/4" submission-name="Publication"/>
-        <name-map collection-handle="123456789/281" submission-name="Publication"/>
-        <name-map collection-handle="123456789/5" submission-name="Publication"/>
-        <name-map collection-handle="123456789/8" submission-name="OrgUnit"/> -->
-        <name-map collection-handle="123456789/14" submission-name="Person"/>
-        <!-- <name-map collection-handle="123456789/279" submission-name="Person"/>
-        <name-map collection-handle="123456789/7" submission-name="Project"/>
-        <name-map collection-handle="123456789/280" submission-name="Project"/> -->
-        <name-map collection-handle="123456789/13" submission-name="Journal"/>
-        <name-map collection-handle="123456789/15" submission-name="JournalVolume"/>
-        <name-map collection-handle="123456789/16" submission-name="JournalIssue"/>
+        <name-map collection-entity-type="News" submission-name="News"/>
+        <name-map collection-entity-type="NewsYear" submission-name="NewsYear"/>
+        <name-map collection-entity-type="NewsNumber" submission-name="NewsNumber"/>
+       <name-map collection-entity-type="Journal" submission-name="Journal"/>
+	<name-map collection-entity-type="JournalVolume" submission-name="JournalVolume"/>
+        <name-map collection-handle="123456789/130" submission-name="NewsYear"/>
+        <name-map collection-handle="123456789/131" submission-name="NewsNumber"/>
+       
     </submission-map>
 
 
@@ -114,6 +95,24 @@
             <type>submission-form</type>
         </step-definition>
         <step-definition id="journalStep" mandatory="true">
+            <heading>submit.progressbar.describe.stepone</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+        <!-- Passo de submissão para jornal -->
+        <step-definition id="newsStep" mandatory="true">
+            <heading>submit.progressbar.describe.stepone</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+        <!-- Passo de submissão para Ano de Jornal -->
+         <step-definition id="newsYearStep" mandatory="true">
+            <heading>submit.progressbar.describe.stepone</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+        <!-- Passo de submissão para Número de Jornal -->
+         <step-definition id="newsNumberStep" mandatory="true">
             <heading>submit.progressbar.describe.stepone</heading>
             <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
             <type>submission-form</type>
@@ -314,6 +313,34 @@
             <step id="journalStep"/>
             <step id="upload"/>
             <step id="license"/>
+        </submission-process>
+
+        <!--
+        Processo de submissão para a entidade Jornal
+         -->
+        <submission-process name="News">
+            <step id="collection"/>
+            <step id="newsStep"/>
+            <step id="upload"/>
+        </submission-process>
+
+         <!--
+        Processo de submissão para ano de Jornal
+         -->
+        <submission-process name="NewsYear">
+            <step id="collection"/>
+            <step id="newsYearStep"/>
+            <step id="upload"/>
+        </submission-process>
+
+         <!--
+        Processo de submissão para ano de Jornal
+         -->
+        <submission-process name="NewsNumber">
+            <step id="collection"/>
+            <step id="newsNumberStep"/>
+            <step id="upload"/>
+            <step id="cclicense"/>
         </submission-process>
 
         <!--
