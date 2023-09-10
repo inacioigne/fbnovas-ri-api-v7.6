@@ -119,10 +119,10 @@
                 <!-- Used to display related items on single-item pages, because a relationship does not always point to the latest version of the related item -->
                 <entry key="jornal-relationships" value-ref="jornalRelationships"/>
 
-                <entry key="jornalano" value-ref="journalAno"/>
+                <entry key="jornalano" value-ref="jornalAno"/>
                 <!-- Same as the "journalvolume" configuration, but does NOT filter out older versions of items -->
                 <!-- Used to display related items on single-item pages, because a relationship does not always point to the latest version of the related item -->
-                <entry key="jornalano-relationships" value-ref="journalAnoRelationships"/>
+                <entry key="jornalano-relationships" value-ref="jornalAnoRelationships"/>
             </map>
         </property>
         <property name="toIgnoreMetadataFields">
