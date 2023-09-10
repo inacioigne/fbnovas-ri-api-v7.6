@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE relationships SYSTEM "relationship-types.dtd">
+
+<relationships>
+<type>
+        <leftType>Jornal</leftType>
+        <rightType>JornalAno</rightType>
+        <leftwardType>AnoPertenceAJornal</leftwardType>
+        <rightwardType>JornalPossuiAno</rightwardType>
+        <leftCardinality>
+            <min>0</min>
+        </leftCardinality>
+        <rightCardinality>
+            <min>0</min>
+        </rightCardinality>
+    </type>
+ <type>
+        <leftType>JornalAno</leftType>
+        <rightType>JornalNumero</rightType>
+        <leftwardType>numeroPertenceAAno</leftwardType>
+        <rightwardType>AnoPossuiNumero</rightwardType>
+        <leftCardinality>
+            <min>0</min>
+        </leftCardinality>
+        <rightCardinality>
+            <min>0</min>
+        </rightCardinality>
+    </type>
+   
+</relationship>
