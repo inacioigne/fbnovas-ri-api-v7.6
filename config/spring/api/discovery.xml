@@ -2149,7 +2149,7 @@
                 <ref bean="searchFilterCreativeWorkPublisher"/>
                 <ref bean="searchFilterCreativeWorkEditor"/>
                 <ref bean="searchFilterIsIssueOfJournalVolumeRelation"/>
-                <ref bean="searchFilterIsVolumeOfJournalRelation"/>
+                <ref bean="searchFilterAnoPertenceAJornalRelation"/>
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -2208,7 +2208,7 @@
                 <ref bean="searchFilterCreativeWorkPublisher"/>
                 <ref bean="searchFilterCreativeWorkEditor"/>
                 <ref bean="searchFilterIsIssueOfJournalVolumeRelation"/>
-                <ref bean="searchFilterIsVolumeOfJournalRelation"/>
+                <ref bean="searchFilterAnoPertenceAJornalRelation"/>
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -2267,7 +2267,7 @@
                 <ref bean="searchFilterPublicationVolumeNumber"/>
                 <ref bean="searchFilterCreativeWorkDatePublished"/>
                 <ref bean="searchFilterIsIssueOfJournalVolumeRelation"/>
-                <ref bean="searchFilterAnoPertenceAJornalRelation"/>
+                <ref bean="searchFilterIsJournalVolumeRelation"/>
             </list>
         </property>
         <!--The sort filters for the discovery search-->
