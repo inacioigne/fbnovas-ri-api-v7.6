@@ -660,7 +660,7 @@
         </form>
 
         <!-- Formulário que define metadados para submissão da entidade Jornal -->
-        <form name="newsStep">
+        <form name="jornalStep">
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>

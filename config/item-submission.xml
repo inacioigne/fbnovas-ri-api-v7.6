@@ -19,7 +19,7 @@
     <submission-map>
         <!-- Default submission process -->
         <name-map collection-handle="default" submission-name="traditional"/>
-        <name-map collection-entity-type="News" submission-name="News"/>
+        <name-map collection-entity-type="Jornal" submission-name="Jornal"/>
         <name-map collection-entity-type="NewsYear" submission-name="NewsYear"/>
         <name-map collection-entity-type="NewsNumber" submission-name="NewsNumber"/>
        <name-map collection-entity-type="Journal" submission-name="Journal"/>
@@ -100,7 +100,7 @@
             <type>submission-form</type>
         </step-definition>
         <!-- Passo de submissão para jornal -->
-        <step-definition id="newsStep" mandatory="true">
+        <step-definition id="jornalStep" mandatory="true">
             <heading>submit.progressbar.describe.stepone</heading>
             <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
             <type>submission-form</type>
@@ -318,9 +318,9 @@
         <!--
         Processo de submissão para a entidade Jornal
          -->
-        <submission-process name="News">
+        <submission-process name="Jornal">
             <step id="collection"/>
-            <step id="newsStep"/>
+            <step id="jornalStep"/>
             <step id="upload"/>
         </submission-process>
 
