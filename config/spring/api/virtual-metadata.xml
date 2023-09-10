@@ -199,6 +199,15 @@
             </util:list>
         </property>
     </bean>
+<!-- Configuração Adicionada -->
+    <bean class="org.dspace.content.virtual.Collected" id="anoJornal_title">
+        <property name="fields">
+            <util:list>
+                <value>dc.title</value>
+            </util:list>
+        </property>
+    </bean>
+
 
     <util:map id="isVolumeOfJournalMap">
     </util:map>
