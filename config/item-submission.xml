@@ -20,7 +20,7 @@
         <!-- Default submission process -->
         <name-map collection-handle="default" submission-name="traditional"/>
         <name-map collection-entity-type="Jornal" submission-name="Jornal"/>
-        <name-map collection-entity-type="NewsYear" submission-name="NewsYear"/>
+        <name-map collection-entity-type="JornalAno" submission-name="JornalAno"/>
         <name-map collection-entity-type="NewsNumber" submission-name="NewsNumber"/>
        <name-map collection-entity-type="Journal" submission-name="Journal"/>
 	<name-map collection-entity-type="JournalVolume" submission-name="JournalVolume"/>
