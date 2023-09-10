@@ -2124,7 +2124,7 @@
         <property name="spellCheckEnabled" value="false"/>
     </bean>
 
-    <!-- Configurações Adicionadas -->
+    <!-- Configurações Adicionadas para Jornais -->
      <bean id="jornal" class="org.dspace.discovery.configuration.DiscoveryConfiguration"
           scope="prototype">
         <property name="id" value="jornal"/>
@@ -2164,7 +2164,7 @@
         <property name="defaultFilterQueries">
             <list>
                 <!--Only find items, communities and collections-->
-                <value>search.resourcetype:Item AND latestVersion:true AND entityType_keyword:Journal</value>
+                <value>search.resourcetype:Item AND latestVersion:true AND entityType_keyword:Jornal</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
@@ -2224,7 +2224,7 @@
             <list>
                 <!--Only find items, communities and collections-->
                 <!-- NOTE: NOT filtered on latestVersion = true -->
-                <value>search.resourcetype:Item AND entityType_keyword:Journal</value>
+                <value>search.resourcetype:Item AND entityType_keyword:Jornal</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
