@@ -327,9 +327,9 @@
          <!--
         Processo de submissão para ano de Jornal
          -->
-        <submission-process name="NewsYear">
+        <submission-process name="JornalAno">
             <step id="collection"/>
-            <step id="newsYearStep"/>
+            <step id="jornalAnoStep"/>
             <step id="upload"/>
         </submission-process>
 

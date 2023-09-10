@@ -702,16 +702,16 @@
         </form>
 
          <!-- Formulário que define metadados para submissão da entidade Numero de Jornal -->
-        <form name="newsYearStep">
+        <form name="jornalAnoStep">
             <row>
                 <relation-field>
-                    <relationship-type>isNewsOfNewsYear</relationship-type>
-                    <search-configuration>news</search-configuration>
+                    <relationship-type>AnoPertenceAJornal</relationship-type>
+                    <search-configuration>jornal</search-configuration>
                     <!-- example of filtering Discovery search for Journal by a specific publisher -->
                     <!--<filter>creativework.publisher:somepublishername</filter>-->
                     <label>Jornal</label>
                     <hint>Selecione um Jornal</hint>
-                    <externalsources>sherpaJournal</externalsources>
+                    <!-- <externalsources>sherpaJournal</externalsources> -->
                 </relation-field>
             </row>
             <row>
