@@ -2893,8 +2893,8 @@
         <property name="pageSize" value="10"/>
     </bean>
     <!-- SearcheFilter Adicionado -->
-     <bean id="searchFilterIsJournalVolumeRelation" class="org.dspace.discovery.configuration.DiscoverySearchFilter">
-        <property name="indexFieldName" value="isJournalVolumeRelation"/>
+     <bean id="searchFilterAnoPertenceAJornalRelation" class="org.dspace.discovery.configuration.DiscoverySearchFilter">
+        <property name="indexFieldName" value="AnoPertenceAJornalRelation"/>
         <property name="metadataFields">
             <list>
                 <value>relation.AnoPertenceAJornal.latestForDiscovery</value>
