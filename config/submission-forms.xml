@@ -705,7 +705,7 @@
         <form name="jornalAnoStep">
             <row>
                 <relation-field>
-                    <relationship-type>AnoPertenceAJornal</relationship-type>
+                    <relationship-type>JornalPossuiAno</relationship-type>
                     <search-configuration>jornal</search-configuration>
                     <!-- example of filtering Discovery search for Journal by a specific publisher -->
                     <!--<filter>creativework.publisher:somepublishername</filter>-->
