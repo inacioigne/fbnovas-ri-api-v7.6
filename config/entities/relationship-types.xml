@@ -84,7 +84,7 @@
         <leftType>Journal</leftType>
         <rightType>JournalVolume</rightType>
         <leftwardType>isVolumeOfJournal</leftwardType>
-        <rightwardType>isJournalOfVolume</rightwardType>
+        <rightwardType>isJournalOfVolume</rightwardType> 
         <leftCardinality>
             <min>0</min>
         </leftCardinality>

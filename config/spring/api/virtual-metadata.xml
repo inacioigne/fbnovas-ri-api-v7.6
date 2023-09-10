@@ -21,6 +21,7 @@
                 <entry key="isVolumeOfJournal" value-ref="isVolumeOfJournalMap"/>
                 <entry key="isIssueOfJournalVolume" value-ref="isIssueOfJournalVolumeMap"/>
                 <entry key="isJournalIssueOfPublication" value-ref="isJournalIssueOfPublicationMap"/>
+                <entry key="AnoPertenceAJornal" value-ref="AnoPertenceAJornalMap"/>
             </map>
         </property>
     </bean>
@@ -188,6 +189,9 @@
     </bean>
 
     <util:map id="isVolumeOfJournalMap">
+    </util:map>
+    <!-- Configuração Adicionada -->
+    <util:map id="AnoPertenceAJornalMap">
     </util:map>
 
     <util:map id="isIssueOfJournalVolumeMap">

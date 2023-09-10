@@ -806,10 +806,7 @@
             </row>
            
 
-        </form>
-
-       
-        
+        </form>        
 
         <!-- Form which defines the metadata page/section for depositing Journal Entities -->
         <form name="journalStep">
