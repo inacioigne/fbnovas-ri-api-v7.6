@@ -2309,9 +2309,9 @@
         <property name="spellCheckEnabled" value="true"/>
     </bean>
 
-     <bean id="journalAnoRelationships" class="org.dspace.discovery.configuration.DiscoveryConfiguration"
+     <bean id="jornalAnoRelationships" class="org.dspace.discovery.configuration.DiscoveryConfiguration"
           scope="prototype">
-        <property name="id" value="journalAnoRelationships"/>
+        <property name="id" value="jornalAnoRelationships"/>
         <property name="indexAlways" value="true"/>
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
