@@ -22,6 +22,7 @@
                 <entry key="isIssueOfJournalVolume" value-ref="isIssueOfJournalVolumeMap"/>
                 <entry key="isJournalIssueOfPublication" value-ref="isJournalIssueOfPublicationMap"/>
                 <entry key="AnoPertenceAJornal" value-ref="AnoPertenceAJornalMap"/>
+                <entry key="JornalPossuiAno" value-ref="JornalPossuiAnoMap"/>
             </map>
         </property>
     </bean>
@@ -168,11 +169,22 @@
         <property name="relationshipTypeString" value="isJournalOfVolume"/>
         <property name="virtualMetadataConfiguration" ref="volumeJournal_title"/>
     </bean>
+  <!-- Map Adicionado-->
+     <bean class="org.dspace.content.virtual.Related" id="anoJornal_title_related">
+        <property name="relationshipTypeString" value="JornalPossuiAno"/>
+        <property name="virtualMetadataConfiguration" ref="anoJornal_title"/>
+    </bean>
 
     <util:map id="isJournalOfVolumeMap">
         <entry key="creativeworkseries.issn" value-ref="volumeJournal_issn"/>
         <entry key="journal.title" value-ref="volumeJournal_title"/>
     </util:map>
+    <!-- Map Adicionado-->
+     <util:map id="JornalPossuiAnoMap">
+        <!-- <entry key="creativeworkseries.issn" value-ref="volumeJournal_issn"/> -->
+        <entry key="jornal.title" value-ref="anoJornal_title"/>
+    </util:map>
+
     <bean class="org.dspace.content.virtual.Collected" id="volumeJournal_issn">
         <property name="fields">
             <util:list>
