@@ -2267,7 +2267,7 @@
                 <ref bean="searchFilterPublicationVolumeNumber"/>
                 <ref bean="searchFilterCreativeWorkDatePublished"/>
                 <ref bean="searchFilterIsIssueOfJournalVolumeRelation"/>
-                <ref bean="searchFilterIsJournalVolumeRelation"/>
+                <ref bean="searchFilterJornalPossuiAnoRelation"/>
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -2325,8 +2325,8 @@
                 <ref bean="searchFilterTitle"/>
                 <ref bean="searchFilterPublicationVolumeNumber"/>
                 <ref bean="searchFilterCreativeWorkDatePublished"/>
-                <!-- <ref bean="searchFilterIsIssueOfJournalVolumeRelation"/>
-                <ref bean="searchFilterIsJournalVolumeRelation"/> -->
+                <!-- <ref bean="searchFilterIsIssueOfJournalVolumeRelation"/>-->
+                <ref bean="searchFilterJornalPossuiAnoRelation"/> 
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -2957,6 +2957,17 @@
         <property name="metadataFields">
             <list>
                 <value>relation.AnoPertenceAJornal.latestForDiscovery</value>
+            </list>
+        </property>
+        <property name="isOpenByDefault" value="false"/>
+        <property name="pageSize" value="10"/>
+    </bean>
+
+    <bean id="searchFilterJornalPossuiAnoRelation" class="org.dspace.discovery.configuration.DiscoverySearchFilter">
+        <property name="indexFieldName" value="JornalPossuiAnoRelation"/>
+        <property name="metadataFields">
+            <list>
+                <value>relation.JornalPossuiAno.latestForDiscovery</value>
             </list>
         </property>
         <property name="isOpenByDefault" value="false"/>
