@@ -24,7 +24,7 @@
         <name-map collection-entity-type="NewsNumber" submission-name="NewsNumber"/>
        <name-map collection-entity-type="Journal" submission-name="Journal"/>
 	<name-map collection-entity-type="JournalVolume" submission-name="JournalVolume"/>
-        <name-map collection-handle="123456789/130" submission-name="NewsYear"/>
+        <name-map collection-handle="123456789/143" submission-name="JornalAno"/>
         <name-map collection-handle="123456789/131" submission-name="NewsNumber"/>
        
     </submission-map>
