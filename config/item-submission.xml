@@ -106,7 +106,7 @@
             <type>submission-form</type>
         </step-definition>
         <!-- Passo de submissão para Ano de Jornal -->
-         <step-definition id="newsYearStep" mandatory="true">
+         <step-definition id="jornalAnoStep" mandatory="true">
             <heading>submit.progressbar.describe.stepone</heading>
             <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
             <type>submission-form</type>
