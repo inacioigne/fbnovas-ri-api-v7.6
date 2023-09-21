@@ -51,16 +51,43 @@
         <!-- Form which defines the first page/section of the "traditional" DSpace submission process,
              often used when depositing normal Items (i.e. Items which are not Entities). -->
         <form name="traditionalpageone">
+        <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Tipo</label>
+                    <input-type value-pairs-name="common_types">dropdown</input-type>
+                    <hint>Selecione o tipo de item.
+                    </hint>
+                    <required>Coloque o tipo do item</required>
+                </field>
+            </row>
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
                     <dc-qualifier>author</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Author</label>
+                    <label>Autor</label>
+                    <!-- <type-bind>Artigo</type-bind> -->
                     <input-type>onebox</input-type>
-                    <hint>Enter the author's name (Family name, Given names).</hint>
-                    <required></required>
+                    <hint>Entre com o nome do autor (Ex. Vasconcelos, Alcebíades Pereira)</hint>
+                    <required>É obrigatório o nome do autor</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>advisor</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Orientador</label>
+                    <type-bind>Artigo, Tese</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Entre com o nome do orientador (Ex. Vasconcelos, Alcebíades Pereira)</hint>
+                    <!-- <required>É obrigatório o nome do autor</required> -->
                 </field>
             </row>
             <row>
@@ -69,13 +96,13 @@
                     <dc-element>title</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Title</label>
+                    <label>Título</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the main title of the item.</hint>
-                    <required>You must enter a main title for this item.</required>
+                    <hint>Entre com o título e subtítulo (se houver) do item. (Ex. Um enigma de Deus: a história de um legado de fé e educação)</hint>
+                    <required>O título é obrigatório</required>
                 </field>
             </row>
-            <row>
+            <!-- <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>title</dc-element>
@@ -86,23 +113,22 @@
                     <hint>If the item has any alternative titles, please enter them here.</hint>
                     <required></required>
                 </field>
-            </row>
+            </row> -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>date</dc-element>
                     <dc-qualifier>issued</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Date of Issue</label>
+                    <label>Data de publicação</label>
+                    <!-- <type-bind>Artigo</type-bind> -->
                     <style>col-sm-4</style>
                     <input-type>date</input-type>
-                    <hint>Please give the date of previous publication or public distribution.
-                        You can leave out the day and/or month if they aren't applicable.
-                    </hint>
-                    <required>You must enter at least the year.</required>
+                    <hint>Ano de conclusão do trabalho</hint>
+                    <required>Ano de conclusão obrigatório.</required>
                 </field>
 
-                <field>
+                <!-- <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier></dc-qualifier>
@@ -112,21 +138,21 @@
                     <input-type>onebox</input-type>
                     <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
                     <required></required>
-                </field>
+                </field> -->
             </row>
-            <row>
+           <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
                     <dc-qualifier>citation</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Citation</label>
+                    <label>Citação</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the standard citation for the previously issued instance of this item.</hint>
+                    <hint>Referência de como o trabalho será citado em outros documentos de acordo com a NBR ABNT6023.</hint>
                     <required></required>
                 </field>
             </row>
-            <row>
+            <!-- <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>relation</dc-element>
@@ -137,14 +163,14 @@
                     <hint>Enter the series and number assigned to this item by your community.</hint>
                     <required></required>
                 </field>
-            </row>
-            <row>
+            </row> -->
+            <!-- <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
-                    <dc-qualifier></dc-qualifier>
+                    <dc-qualifier></dc-qualifier> -->
                     <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
-                    <repeatable>true</repeatable>
+                    <!-- <repeatable>true</repeatable>
                     <label>Identifiers</label>
                     <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
                     <hint>If the item has any identification numbers or codes associated with
@@ -152,33 +178,18 @@
                     </hint>
                     <required></required>
                 </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>type</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Type</label>
-                    <input-type value-pairs-name="common_types">dropdown</input-type>
-                    <hint>Select the type of content of the item.
-                    </hint>
-                    <required></required>
-                </field>
-            </row>
+            </row> -->
+            
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>language</dc-element>
                     <dc-qualifier>iso</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Language</label>
+                    <label>Idioma</label>
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-                    <hint>Select the language of the main content of the item. If the language does not appear in the
-                        list, please select 'Other'. If the content does not really have a language (for example, if it
-                        is a dataset or an image) please select 'N/A'.
-                    </hint>
-                    <required></required>
+                    <hint>Selecione o idioma do item</hint>
+                    <required>O idioma é obrigatório</required>
                 </field>
             </row>
         </form>
