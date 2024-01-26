@@ -164,13 +164,13 @@
                     <required></required>
                 </field>
             </row> -->
-            <!-- <row>
+             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
-                    <dc-qualifier></dc-qualifier> -->
+                    <dc-qualifier></dc-qualifier> 
                     <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
-                    <!-- <repeatable>true</repeatable>
+                     <repeatable>true</repeatable>
                     <label>Identifiers</label>
                     <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
                     <hint>If the item has any identification numbers or codes associated with
@@ -178,7 +178,7 @@
                     </hint>
                     <required></required>
                 </field>
-            </row> -->
+            </row> 
             
             <row>
                 <field>
@@ -1537,8 +1537,8 @@
                 <stored-value>other</stored-value>
             </pair>
             <pair>
-                <displayed-value>ISMN</displayed-value>
-                <stored-value>ismn</stored-value>
+                <displayed-value>DOI</displayed-value>
+                <stored-value>doi</stored-value>
             </pair>
             <pair>
                 <displayed-value>Gov't Doc #</displayed-value>
@@ -1627,23 +1627,19 @@
              "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
           -->
         <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
-            <pair>
-                <displayed-value>N/A</displayed-value>
-                <stored-value></stored-value>
+            <pair> 
+                <displayed-value>Portuguese</displayed-value>
+                <stored-value>pt</stored-value>
             </pair>
             <pair>
-                <displayed-value>English (United States)</displayed-value>
-                <stored-value>en_US</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>English</displayed-value>
+                <displayed-value>Inglês</displayed-value>
                 <stored-value>en</stored-value>
             </pair>
             <pair>
-                <displayed-value>Spanish</displayed-value>
+                <displayed-value>Espanhol</displayed-value>
                 <stored-value>es</stored-value>
             </pair>
-            <pair>
+            <!-- <pair>
                 <displayed-value>German</displayed-value>
                 <stored-value>de</stored-value>
             </pair>
@@ -1663,10 +1659,7 @@
                 <displayed-value>Chinese</displayed-value>
                 <stored-value>zh</stored-value>
             </pair>
-            <pair>
-                <displayed-value>Portuguese</displayed-value>
-                <stored-value>pt</stored-value>
-            </pair>
+           
             <pair>
                 <displayed-value>Turkish</displayed-value>
                 <stored-value>tr</stored-value>
@@ -1674,7 +1667,7 @@
             <pair>
                 <displayed-value>(Other)</displayed-value>
                 <stored-value>other</stored-value>
-            </pair>
+            </pair>-->
         </value-pairs>
 
         <!-- OpenAIRE specific value pairs -->
