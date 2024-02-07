@@ -1555,6 +1555,10 @@
         </value-pairs>
 
        <value-pairs value-pairs-name="common_types" dc-term="type">
+            <pair>
+            <displayed-value>Apresentação</displayed-value>
+            <stored-value>Apresentação</stored-value>
+            </pair>
            <pair>
             <displayed-value>Artigo</displayed-value>
             <stored-value>Artigo</stored-value>
@@ -1562,6 +1566,10 @@
              <pair>
             <displayed-value>Banner</displayed-value>
             <stored-value>Banner</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>Capítulo de Livro</displayed-value>
+            <stored-value>Capítulo de Livro</stored-value>
             </pair>
 
              <pair>
@@ -1589,18 +1597,12 @@
             <displayed-value>Livro</displayed-value>
             <stored-value>Livro</stored-value>
             </pair>
-            <pair>
-            <displayed-value>Capítulo de Livro</displayed-value>
-            <stored-value>Capítulo de Livro</stored-value>
-            </pair>
+            
             <pair>
             <displayed-value>Imagem</displayed-value>
             <stored-value>Imagem</stored-value>
             </pair>
-            <pair>
-            <displayed-value>Apresentação</displayed-value>
-            <stored-value>Apresentação</stored-value>
-            </pair>
+            
             <pair>
             <displayed-value>Podcast</displayed-value>
             <stored-value>Podcast</stored-value>
@@ -1608,6 +1610,10 @@
             <pair>
             <displayed-value>Relatório</displayed-value>
             <stored-value>Relatório</stored-value>
+            </pair>
+             <pair>
+            <displayed-value>Resumo</displayed-value>
+            <stored-value>Resumo</stored-value>
             </pair>
             <pair>
             <displayed-value>Tese</displayed-value>
