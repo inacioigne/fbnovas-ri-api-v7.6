@@ -1571,10 +1571,18 @@
             <displayed-value>Capítulo de Livro</displayed-value>
             <stored-value>Capítulo de Livro</stored-value>
             </pair>
+            <pair>
+            <displayed-value>Folder</displayed-value>
+            <stored-value>Folder</stored-value>
+            </pair>
 
              <pair>
             <displayed-value>Jornal</displayed-value>
             <stored-value>Jornal</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>Livro</displayed-value>
+            <stored-value>Livro</stored-value>
             </pair>
              <pair>
             <displayed-value>Monografia</displayed-value>
@@ -1593,10 +1601,7 @@
             <displayed-value>Produto de Pós-Graduação</displayed-value>
             <stored-value>Produto de Pós-Graduação</stored-value>
             </pair>
-            <pair>
-            <displayed-value>Livro</displayed-value>
-            <stored-value>Livro</stored-value>
-            </pair>
+            
             
             <pair>
             <displayed-value>Imagem</displayed-value>
