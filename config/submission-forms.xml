@@ -1575,7 +1575,10 @@
             <displayed-value>Folder</displayed-value>
             <stored-value>Folder</stored-value>
             </pair>
-
+            <pair>
+            <displayed-value>Folheto</displayed-value>
+            <stored-value>Folheto</stored-value>
+            </pair>
              <pair>
             <displayed-value>Jornal</displayed-value>
             <stored-value>Jornal</stored-value>
@@ -1601,8 +1604,6 @@
             <displayed-value>Produto de Pós-Graduação</displayed-value>
             <stored-value>Produto de Pós-Graduação</stored-value>
             </pair>
-            
-            
             <pair>
             <displayed-value>Imagem</displayed-value>
             <stored-value>Imagem</stored-value>
