@@ -159,7 +159,7 @@
                     <dc-qualifier>ispartof</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>É parte de:</label>
-                    <input-type>series</input-type>
+                    <input-type>onebox</input-type>
                     <hint>Coloque o volume ou evento ao qual o item faz parte.</hint>
                     <required></required>
                 </field>
