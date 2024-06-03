@@ -84,7 +84,7 @@
                     <dc-qualifier>advisor</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Orientador</label>
-                    <type-bind>Artigo, Tese</type-bind>
+                    <type-bind>Artigo, Tese, Apresentação</type-bind>
                     <input-type>onebox</input-type>
                     <hint>Entre com o nome do orientador (Ex. Vasconcelos, Alcebíades Pereira)</hint>
                     <!-- <required>É obrigatório o nome do autor</required> -->
