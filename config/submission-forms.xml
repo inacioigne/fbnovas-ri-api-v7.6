@@ -1568,6 +1568,10 @@
             <stored-value>Banner</stored-value>
             </pair>
             <pair>
+            <displayed-value>Boletim</displayed-value>
+            <stored-value>Boletim</stored-value>
+            </pair>
+            <pair>
             <displayed-value>Capítulo de Livro</displayed-value>
             <stored-value>Capítulo de Livro</stored-value>
             </pair>
